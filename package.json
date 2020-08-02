@@ -1,0 +1,16 @@
+{
+  "name": "automatic_build_number",
+  "version": "1.0.0",
+  "build": 2,
+  "description": "Add build number in your package.json",
+  "scripts": {
+    "start": "node pre-commit.js"
+  },
+  "repository": "SmartBlug/automatic_build_number",
+  "bugs": "https://github.com/SmartBlug/automatic_build_number/issues",
+  "main": "pre-commit.js",
+  "author": "SmartBlug <SmartBlug@SmartExtension.com>",
+  "contributors": [],
+  "license": "BSD-3-Clause",
+  "dependencies": {}
+}
