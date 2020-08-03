@@ -1,7 +1,7 @@
 {
   "name": "automatic_build_number",
   "version": "1.0.0",
-  "build": 2,
+  "build": 3,
   "description": "Add build number in your package.json",
   "scripts": {
     "start": "node pre-commit.js"

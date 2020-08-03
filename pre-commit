@@ -2,6 +2,5 @@
 # To enable this hook, move this file in your .git/hooks/
 
 BUILD_NUMBER=$((`git log master --pretty=oneline | wc -l` + 1))
-sed 's/^  "build": [0-9]*,/  "build": '"$BUILD_NUMBER"',/' package.json > package.new.json
-mv package.new.json package.json
+sed -E -i -e "{s/(build.+) ([0-9]+)/\1 $BUILD_NUMBER/};" package.json
 git add package.json
